@@ -2,6 +2,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 80px;
+	padding: 10px;
 	min-height: 100vh;
 	color: rgba(102, 51, 153, 1);
 	background-color: rgba(241, 231, 254, 1) ;
@@ -20,4 +22,21 @@ body {
 	color: rgba(174, 168, 211, 1);
 	margin: 0.6rem 0 0 2rem 0;
 	display: block;
+}
+.loading__anim {
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+	display: inline-block;
+	border: 5px solid rgba(220, 198, 224, 0.5);
+	border-left-color: rgba(154, 18, 179, 1);
+	border-top-color:  rgba(154, 18, 179, 1);
+	border-radius: 50%;
+	animation: rotate 1200ms infinite linear;
+}
+
+@keyframes rotate {
+	to {
+	transform: rotate(1turn)
+	}
 }
